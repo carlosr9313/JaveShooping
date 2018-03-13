@@ -1,0 +1,1 @@
+Esta carpeta contendra toda la informacion pertinente para el desarrollo del proyecto e la materia IngeSoft 2018-01
