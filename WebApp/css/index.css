@@ -1,0 +1,146 @@
+
+
+
+.TituloPrincipal{
+	position: absolute;
+	top: calc(51% - 35px);
+	left: calc(50% - 255px);
+}
+
+.TituloPrincipal div{
+	float: left;
+	color: #3850FF;
+	font-family: 'Anton', sans-serif;
+    font-weight: 200;
+	font-size: 40px;
+}
+
+.TituloPrincipal div span{
+	color: #FFC40D;
+}
+
+/*---------------Clase  Iniciar Sesion------------------*/         
+.IniciarSesion{
+	position: absolute;
+	top: calc(45% - 75px);
+	left: calc(55% - 50px);
+	height: 100px;
+	width: 300px;
+	padding: 10px;
+	
+}
+
+.IniciarSesion input[type=text]{
+    border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.IniciarSesion input[type=password]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.IniciarSesion input[type=button]{
+	border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 230px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+        
+.IniciarSesion input[type=text]:focus{
+	outline: none;
+	border: 1px solid #FFC40D;
+}
+
+.IniciarSesion input[type=password]:focus{
+	outline: none;
+	border: 1px solid #FFC40D;
+}        
+
+
+/*---------------BUTTON 1------------------*/        
+.IniciarSesion input[type=button]:hover{
+	opacity: 0.4;
+}
+
+.IniciarSesion input[type=button]:active{
+	opacity: 0.6;
+}
+
+.IniciarSesion input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: #FFFFFF;
+}
+
+::-moz-input-placeholder{
+   color: #FFFFFF;
+}
+/*---------------BUTTON 1------------------*/ 
+
+/*---------------Clase  Registrar Usuario------------------*/      
+
+.RegistroUsuario{
+	position: absolute;
+	top: calc(67% - 75px);
+	left: calc(55% - 50px);
+	height: 100px;
+	width: 300px;
+	padding: 10px;
+	
+}
+
+.RegistroUsuario input[type=button]{
+	border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 230px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}        
+.RegistroUsuario input[type=button]:hover{
+	opacity: 0.4;
+}
+
+.RegistroUsuario input[type=button]:active{
+	opacity: 0.6;
+}
+
+.RegistroUsuario input[type=button]:focus{
+	outline: none;
+}
+
+   
