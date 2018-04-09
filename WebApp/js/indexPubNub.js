@@ -8,41 +8,41 @@
     channels: ['jave-channel'],
     });
     
-function check(form)
-{
- 
- if(form.userid.value == "gerencia" && form.pswrd.value == "gerencia")
-  {
-      location.href = "https://www.youtube.com/watch?v=nZ-X-dhQrvQ"
-//    location.href = "registro.html"
-    pubnub.publish(
-    {
-        message: { 
-            such: "usuario " + form.userid.value + "\n Contraseña "+form.pswrd.value
-        },
-        channel: 'jave-channel',
-        sendByPost: false, // true to send via post
-        storeInHistory: false, //override default storage options
-        meta: { 
-            "cool": "meta"
-        }   // publish extra meta with the request
-    }, 
-    function (status, response) {
-        if (status.error) {
-            // handle error
-            console.log(status)
-        } else {
-            console.log("message Published w/ timetoken", response.timetoken)
-        }
-    }
-    );
-  
-  }
- else
- {
-   alert("DATOS INGRESADOS ERRONEOS O INCOMPLETOS")
-  }
-}
+//function check(form)
+//{
+// 
+// if(form.userid.value == "gerencia" && form.pswrd.value == "gerencia")
+//  {
+//      location.href = "https://www.youtube.com/watch?v=nZ-X-dhQrvQ"
+////    location.href = "registro.html"
+//    pubnub.publish(
+//    {
+//        message: { 
+//            such: "usuario " + form.userid.value + "\n Contraseña "+form.pswrd.value
+//        },
+//        channel: 'jave-channel',
+//        sendByPost: false, // true to send via post
+//        storeInHistory: false, //override default storage options
+//        meta: { 
+//            "cool": "meta"
+//        }   // publish extra meta with the request
+//    }, 
+//    function (status, response) {
+//        if (status.error) {
+//            // handle error
+//            console.log(status)
+//        } else {
+//            console.log("message Published w/ timetoken", response.timetoken)
+//        }
+//    }
+//    );
+//  
+//  }
+// else
+// {
+//   alert("DATOS INGRESADOS ERRONEOS O INCOMPLETOS")
+//  }
+//}
 
  function registrar(registrar){
     location.href = "registro.html"

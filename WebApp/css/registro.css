@@ -24,13 +24,21 @@
 }
         
 /*Datos Fijos para guia*/
+.TabladeDatos{
+  display: flex;
+  justify-content: center;
+}
 .TitulosRegistro{
-	position: absolute;
-	top: calc(40% - 71px);
-	left: calc(45% - 40px);
-    height: 100px;
-	width: 400px;
-	padding: 10px;
+	position: relative;
+    top: 75px;
+    padding: 5px;
+    margin: 5px;
+/*
+    padding: 80px;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+*/
     
 }
 
@@ -48,12 +56,16 @@
 
 /*---------------Clase  Iniciar Sesion------------------*/         
 .DatosUsuarioA{
-	position: absolute;
-	top: calc(45% - 75px);
-	left: calc(55% - 50px);
-	height: 100px;
-	width: 400px;
-	padding: 10px;
+    position: relative; 
+    top: 95px;
+    padding: 5px;
+    margin: 5px;
+/*
+    padding: 0px;
+    text-align: right;
+    margin: auto;
+    width: 400px;
+*/
 	
 }
 /* Campo para nombre */
@@ -96,20 +108,7 @@
 	padding: 4px;
 	margin-top: 10px;
 }
-/* Fecha de nacimiento*/
-.DatosUsuarioA input[type=text]{
-	border: 1px solid #0B33CC;
-	border-radius: 2px;
-    width: 220px;
-	height: 30px;
-	background: transparent;
-	color: #0B33CC;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
-}        
+    
 /* Correo Electronico Institucional */   
 .DatosUsuarioA input[type=text]{
 	border: 1px solid #0B33CC;
@@ -123,8 +122,51 @@
 	font-weight: 400;
 	padding: 4px;
 	margin-top: 10px;
-}        
-.DatosUsuarioA input[type=button]{
+}
+/* Fecha de nacimiento*/
+.DatosUsuarioA input[type=text]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+/*Contraseña*/
+.DatosUsuarioA input[type=password]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+/*Contraseña*/
+.DatosUsuarioA input[type=password]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.DatosUsuarioA input[type=submit]{
 	border: 1px solid #FFC40D;
     border-radius: 2px;
     width: 230px;

@@ -27,26 +27,36 @@
         <div class="TitulosRegistroGlobal">
         <div>Datos para crear Usuario</div>
         </div>
-		<div class="TitulosRegistro">
+        
+        <div class="TabladeDatos">
+		    <div class="TitulosRegistro">
             <div><p align = "right">Nombres</p>
             <p align = "right">Apellido 1</p>
             <p align = "right">Apellido 2</p>
-            <p align = "right">Fecha</p>
             <p align = "right">Correo</p>
+            <p align = "right">Fecha Nacimiento</p>
+            <p align = "right">Contraseña</p>
+            <p align = "right">Contraseña</p>    
+            
             </div>    
             </div>
 		
-		<form name="DatosUsuarioA">
-		<div class="DatosUsuarioA">
-				<input type="text" placeholder="Digite Nombres" name="nombres"><br>
-				<input type="text" placeholder="Digite Apellido 1" name="apellido1"><br>
-                <input type="text" placeholder="Digite Apellido 2" name="apellido2"><br>
-                <input type="text" placeholder="Fecha nacimiento" name="fecha"><br>
-                <input type="text" placeholder="Correo Electronico" name="correo"><br>
-                <input type="button" onclick="check(this.form)" value="Registra Datos"/>
-		</div>
+         
+		<form action="insertarDatos.php" method="POST">
+            <div class="DatosUsuarioA">
+				<input type="text" placeholder="Nombres" name="nombreuser"><br>
+				<input type="text" placeholder="Apellido 1" name="apellido1suser"><br>
+                <input type="text" placeholder="Apellido 2" name="apellido2suser"><br>
+                <input type="text" placeholder="Correo" name="emailuser"><br>
+                <input type="text" placeholder="DD/MM/AAAA" name="fecha"><br>
+                <input type="password" placeholder="**********" name="pass"><br>
+                <input type="password" placeholder="**********" name="rpass"><br>
+                <input type="submit" value="Registra Datos"/>
+		     </div>
         </form>
-        
+         
+        </div>
+            
   
 <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.1.js"></script>  
 <script src="js/PubNub.js"></script>

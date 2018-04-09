@@ -9,13 +9,21 @@
   <link rel="stylesheet" href="css/cuerpoPagina.css"/>
   <link rel="stylesheet" href="css/index.css"/>       
 
-    <style>
+<style>
 @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
 </style>
 
-  
+<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>6.4.0.jre8</version>
+</dependency>
+<properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+</properties>    
 
 </head>
 
@@ -27,11 +35,11 @@
 			<div>JAVE<span>shopping</span></div>
 		</div>
 		<br>
-		<form name="IniciarSesion">
+		<form name="IniciarSesion" action="login.php" method="POST">
 		<div class="IniciarSesion">
 				<input type="text" placeholder="Digite Usuario" name="userid"><br>
 				<input type="password" placeholder="Contraseña" name="pswrd"><br>
-				<input type="button" onclick="check(this.form)" value="Iniciar Sesion"/>
+				<input type="submit" value="Iniciar Sesion"/>
                 
 		</div>
         </form>
@@ -40,12 +48,9 @@
 				<input type="button" onclick="registrar(this.form)" value="Registrar Usuario" />
 		</div>
 
-
-
         </form>
   
 <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.1.js"></script>  
 <script src="js/indexPubNub.js"></script>
-<script src="js/indexAzure.js"></script>
 </body>
 </html>

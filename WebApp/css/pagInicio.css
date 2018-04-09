@@ -1,0 +1,65 @@
+*{
+    margin:  0px;
+    padding: 0px;
+}
+
+div#body{
+    position: fixed; 
+    overflow-y: scroll;
+   	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	background-image: url(https://static.pexels.com/photos/1712/sunglasses-apple-iphone-desk.jpg);
+	background-size: cover;
+  
+}
+
+div#header{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    opacity: 0.8;    
+   
+}
+
+div#main{
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.8;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div#footer{
+     width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 0.8; 
+}
+
+.TitulosRegistroGlobal{
+	position: relative; 
+    padding: 80px;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+  
+    
+}
+
+.TitulosRegistroGlobal div{
+	
+/*	color: #3850FF;*/
+    color: #FFC40D;
+	font-family: 'Indie Flower', cursive;
+    font-weight: 500;
+	font-size: 50px;
+    
+}
+
+.TitulosRegistroGlobal div span{
+	color: #FFC40D;
+}
