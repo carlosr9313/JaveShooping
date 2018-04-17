@@ -48,6 +48,23 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
 //    );
 //    ');
 
+
+//    CREATE TABLE datosProducto (
+//    `Id` INT NOT NULL AUTO_INCREMENT ,
+//    `nombre` VARCHAR(200) NOT NULL ,
+//    `precio` VARCHAR(200) NOT NULL ,
+//    `unidades` VARCHAR(200) NOT NULL ,
+//    `oferta` VARCHAR(200) NOT NULL ,
+//    `descripcion` VARCHAR(500) NOT NULL ,
+//    `foto` LONGBLOB NOT NULL ,
+//    `fecha` DATE NOT NULL ,
+//    `estadoProducto` VARCHAR(200) NOT NULL ,    
+//    `idUsuario` VARCHAR(200) NOT NULL ,
+//        
+//
+//    PRIMARY KEY (`Id`)
+//    );
+
 	//ingresamos la informacion a la base de datos
 	if ($stmt = mysqli_prepare($conn,"INSERT INTO datosLogin (Nombre, Apellido1, Apellido2, Email, Fecha, Contrasena,status)VALUES (?,?,?,?,?,?,?)")) {
         mysqli_stmt_bind_param($stmt, 'sssssss', $nombres, $apellidos1, $apellidos2,$email,$fecha,$contraseñaUser,$status);

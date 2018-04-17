@@ -16,11 +16,20 @@ div#body{
 }
 
 div#header{
+   
     width: 100%;
     height: 200px;
     background-color: black;
-    opacity: 0.8;    
-   
+    opacity: 0.8;   
+}
+div#Usuario{
+    position: absolute;
+    top:  50px; 
+    left: 20px;
+    width: 15%;
+    height: 105px;
+    background-color: gray;
+    opacity: 0.9;   
 }
 
 div#main{
@@ -39,7 +48,7 @@ div#footer{
     background-color: black;
     opacity: 0.8; 
 }
-
+/*----------TITULO REGISTRO GLOBAL-----------*/
 .TitulosRegistroGlobal{
 	position: relative; 
     padding: 80px;
@@ -53,7 +62,7 @@ div#footer{
 .TitulosRegistroGlobal div{
 	
 /*	color: #3850FF;*/
-    color: #FFC40D;
+    color: #3850FF;
 	font-family: 'Indie Flower', cursive;
     font-weight: 500;
 	font-size: 50px;
@@ -63,3 +72,52 @@ div#footer{
 .TitulosRegistroGlobal div span{
 	color: #FFC40D;
 }
+/*----------FIN DE TITULO REGISTRO GLOBAL-----------*/
+
+/*----------Publicaciones  USUARIO-----------*/
+
+.UsuarioInfor{
+	position: absolute;
+    top:  20px; 
+    left: 20px;
+    width: 20%;
+    height: 100px;
+	padding: 10px;
+	
+}
+/*NOMBRE USUARIO*/
+.UsuarioInfor input[type=text]{
+    border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	
+}
+/*INFOR NOMBRe*/
+
+.UsuarioInfor input[type=submit]{
+	border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+    position: absolute;
+    left: 40px;
+	
+}
+/*----------FIN de Publicaciones  USUARIO-----------*/
+
+/*----------Publicaciones  USUARIO RESCATADAO-----------*/
+
+/*----------FIN de Publicaciones  USUARIO RESCATADAO-----------*/
+/*----------Publicaciones  REGISTRO GLOBAL-----------*/
+
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/

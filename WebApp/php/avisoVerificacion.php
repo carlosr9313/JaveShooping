@@ -119,7 +119,7 @@ echo'PRUEBA';
     //$mail->MsgHTML(prueba); //se indica que el cuerpo del correo tendrà formato HTML
     //$mail->AddAttachment($destino); //accedemos  al archivo  que se subió al servidor  y lo adjuntamos
     if ($mail->Send()) { //Enviamos el correo por PHPMailer
-        $respuesta= "Bienvenido $nombreusuario el registro está casi completo. Por favor chequea tu email $nombreusuario y clickea el enlace $url_corta que activará su cuenta.Tenga en cuenta que este email puede llegar como correo spam, por lo que debe revisar su bandeja de correos no deseados. Tanto su contraseña como las instrucciones adicionales han sido enviados a su correo electrónico";
+        $respuesta= "Bienvenido $nombreusuario el registro está casi completo. Por favor chequea tu email $nombreusuario y clickea el enlace $url_corta que activará su cuenta.Tenga en cuenta que este email puede llegar como correo spam, por lo que debe revisar su bandeja de correos no deseados.";
         //echo "SE ENVIO, $respuesta";
         }else {
         $respuesta= "El mensaje no se pudo enviar a su cuenta =(";

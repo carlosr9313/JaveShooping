@@ -31,6 +31,7 @@ $contraseñaUser = md5($pswrd);
 
 if('TRUE'===$status){
 if($nombres === $Email && $contraseñaUser === $Contrasena){
+    echo $Nombre;
     echo '<script>
 			location.href="pagInicio.html";
 		</script>';
