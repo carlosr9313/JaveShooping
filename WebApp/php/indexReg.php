@@ -13,23 +13,7 @@ if (mysqli_connect_errno($conn)) {
 die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-
-function mostrar(){  //FUNCION MOSTRAR
-echo'<form action="indexReg.php" method="post" name="1">
-Usuario (max 20):
-  <input type="text" name="username" size="20" maxlength="20" /><br />
-Password (max 10):
-<input type="password" name="password" size="10" maxlength="10" />
-Confirma: <input type="password" name="password2" size="10" maxlength="10" /><br />
-Email (max 40):
-<input type="text" name="email" size="20" maxlength="40" /><br />
-<input type="submit" value="Registrar" />
-</form>';
-}
-function mostrar1(){    //ESTA FUNCION ES PARA IMPRIMIR CUANDO EL REGISTRO ES UN EXITO USUARIO Y CLAVE //NAME:usuario
-echo'PRUEBA';
-}                //LA FUNCION 1 DEBERIA IR EN login.php
-          
+      
     //incluyo la clase phpmailer
    
     
@@ -72,7 +56,7 @@ echo'PRUEBA';
         echo "NO SE PUDO ENVIAR";
         }
    
-header("Location:login.php?respuesta=$respuesta");
+       header("Location:login.php?respuesta=$respuesta");
        echo 'El usuario '.$nombreusuario.' ha sido registrado de manera satisfactoria.<br />;
        Ahora puede entrar ingresando su usuario y su password <br />';
        mostrar1(); //FUNCION MOSTRAR 1
