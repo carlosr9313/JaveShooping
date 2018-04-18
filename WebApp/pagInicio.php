@@ -1,6 +1,11 @@
+<?php
+session_start(); //Iniciamos la Sesion o la Continuamos
+$Nombre = $_SESSION['nombre'];
+$Apellido1 = $_SESSION['apellido'];
+$Email =  $_SESSION['email'];
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
 
   <meta charset="UTF-8">
@@ -30,12 +35,26 @@
         <div>JAVE<span>shopping</span></div>
         </div>
       <div id="Usuario">
+        <form name="UsuarioInfor" action="../pagInfo.php" method="POST">   
         <div class="UsuarioInfor">
+         
         <div>Hola </div>  
-        <input type="text" name="nombre" value="<?php $Nombre = $_GET['Email']; echo $miVariable; ?>" />
+             <div><?php echo $Nombre;?></div>
         <input type="submit" value="Info"/>    
         </div>
+        </form>    
       </div>
+      
+        <div id="Cargar">
+        <form name="BotonCargarPublicaciones" action="../pagInicio.php" method="POST">   
+        <div class="BotonCargarPublicaciones">
+              
+            <div><input type="submit" value="Recargar"/></div>    
+        </div>
+        </form>    
+      </div>
+      
+      
     </div>
     
   <div id="main">
@@ -43,6 +62,7 @@
     
   <div id="footer">
     </div>    
+   
      
 </body>
 </html>

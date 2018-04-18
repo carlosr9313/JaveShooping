@@ -74,6 +74,8 @@ div#footer{
 }
 /*----------FIN DE TITULO REGISTRO GLOBAL-----------*/
 
+
+
 /*----------Publicaciones  USUARIO-----------*/
 
 .UsuarioInfor{
@@ -116,8 +118,127 @@ div#footer{
 /*----------FIN de Publicaciones  USUARIO-----------*/
 
 /*----------Publicaciones  USUARIO RESCATADAO-----------*/
+.TitulosDatosUsuarioRescatado{
+	width: 15%;
+    margin: 20px auto;
+    padding-left: 160px;
+    padding-top: 70px;
+    width: 200px;
+  
+}
+
+.TitulosDatosUsuarioRescatado div{
+	
+    float:left;
+    
+    color: #3850FF;
+	font-family: 'Indie Flower', cursive;
+    font-weight: 200;
+	font-size: 20px;
+    
+}
+.TitulosUsuarioRescatado{
+	width: 15%;
+    margin: 20px auto;
+    width: 100px;
+  
+}
+
+.TitulosUsuarioRescatado div{
+	
+    float:right;
+    padding-right: 130px;
+    padding-top: 70px;
+    color: #3850FF;
+	font-family: 'Indie Flower', cursive;
+    font-weight: 200;
+	font-size: 20px;
+    
+}
+
+.TituloINFO{
+	width: 30%;
+    margin: 0px auto;
+    width: 150px;
+  
+}
+
+.TituloINFO div{
+	
+    float:center;
+    padding-top: 30px;
+    color: #3850FF;
+	font-family: 'Indie Flower', cursive;
+    font-weight: 200;
+	font-size: 20px;
+    
+}
 
 /*----------FIN de Publicaciones  USUARIO RESCATADAO-----------*/
 /*----------Publicaciones  REGISTRO GLOBAL-----------*/
+.BotonFlotante{
+	width: 15%;
+    margin: 20px auto;
+    width: 200px;
+    padding-left: 160px;
+    padding-top: 350px;
+	
+}
 
+/*BOTON DE USUARIO*/
+.BotonFlotante input[type=submit]{
+	
+    float:left;
+    border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+   
+	
+}
 /*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+.BotonCargarPublicaciones{
+	position: absolute;
+    top:  100px; 
+    right: 20px;
+    width: 20%;
+    height: 100px;
+	padding: 10px;
+	
+}
+/*NOMBRE USUARIO*/
+.BotonCargarPublicaciones input[type=text]{
+    
+	width: 220px;
+	height: 40px;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	
+}
+/*INFOR NOMBRe*/
+
+.BotonCargarPublicaciones input[type=submit]{
+	border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+    position: absolute;
+    left: 40px;
+	
+}
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+
+

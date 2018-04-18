@@ -26,7 +26,7 @@ $consulta = "UPDATE datosLogin SET status='TRUE' WHERE Email = '$id'";
 if (mysqli_query($conn, $consulta)) {
       echo '<script>
 			alert("Usuario Verificado");
-			location.href="index.html";
+			location.href="../index.html";
 		</script>';
    } else {
       echo "Error updating record: ";

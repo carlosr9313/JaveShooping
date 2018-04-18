@@ -21,22 +21,7 @@ function acortarurl($url){
     }else{
         return $url;
     }
-}    
-function mostrar(){  //FUNCION MOSTRAR
-echo'<form action="indexReg.php" method="post" name="1">
-Usuario (max 20):
-  <input type="text" name="username" size="20" maxlength="20" /><br />
-Password (max 10):
-<input type="password" name="password" size="10" maxlength="10" />
-Confirma: <input type="password" name="password2" size="10" maxlength="10" /><br />
-Email (max 40):
-<input type="text" name="email" size="20" maxlength="40" /><br />
-<input type="submit" value="Registrar" />
-</form>';
-}
-function mostrar1(){    //ESTA FUNCION ES PARA IMPRIMIR CUANDO EL REGISTRO ES UN EXITO USUARIO Y CLAVE //NAME:usuario
-echo'PRUEBA';
-}                //LA FUNCION 1 DEBERIA IR EN login.php
+}                  //LA FUNCION 1 DEBERIA IR EN login.php
   //incluyo la clase phpmailer
     //require "class.smtp.php";
     $nombreusuario = $_GET['Email']; 

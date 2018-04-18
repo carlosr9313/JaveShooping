@@ -1,4 +1,5 @@
 <?php
+session_start(); //Iniciamos o Continuamos la sesion
 $host = 'localhost';
 $username = 'id4739775_carlos';
 $password = 'Car.2018';
@@ -20,7 +21,6 @@ $pswrd = $_POST['pswrd'];
 
 $resultado = mysqli_query($conn,"SELECT * FROM datosLogin WHERE Email='$nombres'");
 //$row = mysqli_num_rows($resultado);
-
 $row = mysqli_fetch_array($resultado);
 $Nombre = $row['Nombre'];
 $Email = $row['Email'];
@@ -31,20 +31,22 @@ $contraseñaUser = md5($pswrd);
 
 if('TRUE'===$status){
 if($nombres === $Email && $contraseñaUser === $Contrasena){
-    echo $Nombre;
+    $_SESSION['nombre'] = $Nombre;
+    $_SESSION['apellido'] = $Apellido1;
+    $_SESSION['email'] = $Email;
     echo '<script>
-			location.href="pagInicio.html";
+			location.href="../pagInicio.php";
 		</script>';
 }else{
     echo '<script>
 			alert("Usuario o Contraseña erroneos");
-			location.href="index.html";
+			location.href="../index.html";
 		</script>';
 }
 }else{
       echo '<script>
 			alert("NO A VERIFICADO SU CUENTA");
-			location.href="index.html";
+			location.href="../index.html";
 		</script>';
 }
 /*=====================================================================================================================*/
