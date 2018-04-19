@@ -4,6 +4,14 @@ session_start(); //Iniciamos la Sesion o la Continuamos
 $Nombre = $_SESSION['nombre'];
 $Apellido1 = $_SESSION['apellido'];
 $Email =  $_SESSION['email'];
+$Login = $_SESSION['sesion'];
+if($Login != 'LOGUEADO'){
+echo '<script>
+			alert("FALLA");
+		</script>';    
+    
+header("Location: ../Salir.php");    
+}
 
 $host = 'localhost';
 $username = 'id4739775_carlos';
@@ -27,13 +35,13 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
     $estado = $_POST['estado'];
 
 if ($stmt = mysqli_prepare($conn,"INSERT INTO datosProducto (nombre, precio, unidades, oferta, descripcion, foto, fecha,estadoProducto,idUsuario)VALUES (?,?,?,?,?,?,?,?,?)")) {
-        mysqli_stmt_bind_param($stmt, 'sssssssss', $nombreProducto, $precio, $unidades,$oferta,$descripcion,$foto,$fecha,$estado,$Email);
+        mysqli_stmt_bind_param($stmt,'sssssssss',$nombreProducto,$precio,$unidades,$oferta,$descripcion,$foto,$fecha,$estado,$Email);
         mysqli_stmt_execute($stmt);
         //echo "Insert: Affected %d rows\n";
         mysqli_stmt_close($stmt);
         echo '<script>
 			alert("Registro Exitoso");
-			location.href="../pagInicio.html";
+			location.href="../pagInicio.php";
 		</script>';
     }else{
 //    echo '<script>
@@ -43,10 +51,6 @@ if ($stmt = mysqli_prepare($conn,"INSERT INTO datosProducto (nombre, precio, uni
     }
 
 // Close the connection
-mysqli_close($conn);
-  
-  
- 
 
 ?>
      

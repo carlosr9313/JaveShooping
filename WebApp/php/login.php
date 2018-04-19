@@ -34,6 +34,7 @@ if($nombres === $Email && $contraseñaUser === $Contrasena){
     $_SESSION['nombre'] = $Nombre;
     $_SESSION['apellido'] = $Apellido1;
     $_SESSION['email'] = $Email;
+    $_SESSION['sesion']='LOGUEADO';
     echo '<script>
 			location.href="../pagInicio.php";
 		</script>';

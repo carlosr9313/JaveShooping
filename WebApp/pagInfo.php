@@ -3,6 +3,10 @@ session_start(); //Iniciamos la Sesion o la Continuamos
 $Nombre = $_SESSION['nombre'];
 $Apellido1 = $_SESSION['apellido'];
 $Email =  $_SESSION['email'];
+$Login = $_SESSION['sesion'];
+if('LOGUEADO'!=$Login){
+header("Location: ../Salir.php");    
+}
 
 $host = 'localhost';
 $username = 'id4739775_carlos';

@@ -3,6 +3,14 @@ session_start(); //Iniciamos la Sesion o la Continuamos
 $Nombre = $_SESSION['nombre'];
 $Apellido1 = $_SESSION['apellido'];
 $Email =  $_SESSION['email'];
+$Login = $_SESSION['sesion'];
+if($Login != 'LOGUEADO'){
+echo '<script>
+			alert("FALLA");
+		</script>';    
+    
+header("Location: ../Salir.php");    
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,10 +70,10 @@ $Email =  $_SESSION['email'];
       </div>
       
         <div id="Cargar">
-        <form name="BotonCargarPublicaciones" action="../pagInicio.php" method="POST">   
+        <form name="BotonCargarPublicaciones" action="../Salir.php" method="POST">   
         <div class="BotonCargarPublicaciones">
               
-            <div><input type="submit" value="Recargar"/></div>    
+            <div><input type="submit" value="Salir"/></div>    
         </div>
         </form>    
       </div>
