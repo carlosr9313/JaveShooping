@@ -59,7 +59,7 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
        header("Location:login.php?respuesta=$respuesta");
        echo 'El usuario '.$nombreusuario.' ha sido registrado de manera satisfactoria.<br />;
        Ahora puede entrar ingresando su usuario y su password <br />';
-       mostrar1(); //FUNCION MOSTRAR 1
+       
 ?>
                
     

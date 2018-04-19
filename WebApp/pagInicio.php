@@ -28,6 +28,22 @@ $Email =  $_SESSION['email'];
 <body oncontextmenu="return false">
 
   <div id="body">
+      
+        <form name="BotonBuscar" action="../pagInicio.php" method="POST">   
+        <div class="BotonBuscar">
+        <div>Buscar </div>  
+        <input type="text" placeholder="Producto a buscar" name="productoABuscar">   
+        <input type="submit" value="Buscar"/>    
+        </div>
+        </form> 
+      
+        <form name="BotonPostear" action="../pagPublicar.php" method="POST">   
+        <div class="BotonPostear">
+        <div>Publicar Producto </div>  
+        <input type="submit" value="Publicar"/>    
+        </div>
+        </form> 
+      
     </div>
     
   <div id="header">
@@ -58,7 +74,7 @@ $Email =  $_SESSION['email'];
     </div>
     
   <div id="main">
-    </div>	
+  </div>	
     
   <div id="footer">
     </div>    
