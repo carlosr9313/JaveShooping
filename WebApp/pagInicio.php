@@ -7,9 +7,9 @@ $Login = $_SESSION['sesion'];
 if($Login != 'LOGUEADO'){
 echo '<script>
 			alert("FALLA");
+            location.href="../index.html";
 		</script>';    
-    
-header("Location: ../Salir.php");    
+     
 }
 ?>
 <!DOCTYPE html>

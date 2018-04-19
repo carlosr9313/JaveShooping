@@ -4,10 +4,13 @@ $Nombre = $_SESSION['nombre'];
 $Apellido1 = $_SESSION['apellido'];
 $Email =  $_SESSION['email'];
 $Login = $_SESSION['sesion'];
-if('LOGUEADO'!=$Login){
-header("Location: ../Salir.php");    
+if($Login != 'LOGUEADO'){
+echo '<script>
+			alert("FALLA");
+            location.href="../index.html";
+		</script>';    
+     
 }
-
 $host = 'localhost';
 $username = 'id4739775_carlos';
 $password = 'Car.2018';

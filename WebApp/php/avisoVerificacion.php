@@ -93,7 +93,7 @@ function acortarurl($url){
 
         $api = new GoogleURL('AIzaSyB_6GvV73ZI_LnezjglChhyI52YRbwl6AY');
         //ver url acortandola
-        $url = "https://javeshopping.000webhostapp.com/verificacionRecibida.php?id=$nombreusuario";
+        $url = "https://javeshopping.000webhostapp.com/php/verificacionRecibida.php?id=$nombreusuario";
         $url_corta =  $api->encode($url);
         //ver url real
         //$url_larga  = $api->decode('http://goo.gl/mbMv2X');
