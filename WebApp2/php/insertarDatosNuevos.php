@@ -5,6 +5,8 @@ $Nombre = $_SESSION['nombre'];
 $Apellido1 = $_SESSION['apellido'];
 $Email =  $_SESSION['email'];
 $Login = $_SESSION['sesion'];
+$IdBuscar = $_SESSION['idBuscar'];
+
 if($Login != 'LOGUEADO'){
 echo '<script>
 			alert("FALLA");
@@ -14,9 +16,9 @@ echo '<script>
 }
 
 $host = 'localhost';
-$username = 'id4739775_carlos';
+$username = 'id5511100_carlos';
 $password = 'Car.2018';
-$db_name = 'id4739775_javeshopping';
+$db_name = 'id5511100_javeshopping2';
 
 //Establishes the connection
 $conn = mysqli_init();
@@ -30,27 +32,18 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
     $unidades = $_POST['unidades'];
 	$oferta = $_POST['oferta'];
     $descripcion = $_POST['descripcion'];
-    $foto = $_POST['foto'];
-	$fecha = $_POST['fecha'];
-    $estado = $_POST['estado'];
-
-if ($stmt = mysqli_prepare($conn,"INSERT INTO datosProducto (nombre, precio, unidades, oferta, descripcion, foto, fecha,estadoProducto,idUsuario)VALUES (?,?,?,?,?,?,?,?,?)")) {
-        mysqli_stmt_bind_param($stmt,'sssssssss',$nombreProducto,$precio,$unidades,$oferta,$descripcion,$foto,$fecha,$estado,$Email);
-        mysqli_stmt_execute($stmt);
-        //echo "Insert: Affected %d rows\n";
-        mysqli_stmt_close($stmt);
-        echo '<script>
-			alert("Registro Exitoso");
-			location.href="../pagInicio.php";
+  
+echo '<script>
+			alert('.$IdBuscar.');
 		</script>';
-    }else{
-//    echo '<script>
-//			alert("FALLO TABLA");
-//			
-//		</script>';
-    }
+
+
+$consulta = mysqli_query($conn,"UPDATE datosProducto SET nombre='$nombreProducto', precio ='$precio', unidades ='$unidades', oferta='$oferta', descripcion='$descripcion' WHERE Id = '$IdBuscar'");
 
 // Close the connection
+echo '<script>
+			location.href="../pagPublicado.php";
+		</script>';
 
 ?>
      

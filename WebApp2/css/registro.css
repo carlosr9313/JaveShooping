@@ -1,0 +1,213 @@
+/*Titulo fijo para pagina*/
+.TitulosRegistroGlobal{
+	position: relative; 
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+  
+    
+}
+
+.TitulosRegistroGlobal div{
+	
+/*	color: #3850FF;*/
+    color: #0A3B79;
+	font-family: 'Indie Flower', cursive;
+    font-weight: 500;
+	font-size: 35px;
+    
+}
+
+.TitulosRegistroGlobal div span{
+	color: #FFC40D;
+}
+        
+/*Datos Fijos para guia*/
+.TabladeDatos{
+  display: flex;
+  justify-content: center;
+}
+.TitulosRegistro{
+	position: relative;
+    top: 75px;
+    padding: 5px;
+    margin: 5px;
+/*
+    padding: 80px;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+*/
+    
+}
+
+.TitulosRegistro div{
+	float: left;
+	color: #FFFFFF;
+	font-family: 'Anton', sans-serif;
+    font-weight: 100;
+	font-size: 24px;
+}
+
+.TitulosRegistro div span{
+	color: #FFC40D;
+}
+
+/*---------------Clase  Iniciar Sesion------------------*/         
+.DatosUsuarioA{
+    position: relative; 
+    top: 95px;
+    padding: 5px;
+    margin: 5px;
+/*
+    padding: 0px;
+    text-align: right;
+    margin: auto;
+    width: 400px;
+*/
+	
+}
+/* Campo para nombre */
+.DatosUsuarioA input[type=text]{
+    border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+/* Campo para Apellido 1 */
+.DatosUsuarioA input[type=text]{
+    border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}        
+/* Campo para Apellido 2 */
+.DatosUsuarioA input[type=text]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+    
+/* Correo Electronico Institucional */   
+.DatosUsuarioA input[type=text]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+/* Fecha de nacimiento*/
+.DatosUsuarioA input[type=text]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+/*Contraseña*/
+.DatosUsuarioA input[type=password]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+/*Contraseña*/
+.DatosUsuarioA input[type=password]{
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+    width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.DatosUsuarioA input[type=submit]{
+	border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 230px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+        
+.DatosUsuarioA input[type=text]:focus{
+	outline: none;
+	border: 1px solid #FFC40D;
+}
+ 
+
+/*---------------BUTTON 1------------------*/        
+.DatosUsuarioA input[type=button]:hover{
+	opacity: 0.4;
+}
+
+.DatosUsuarioA input[type=button]:active{
+	opacity: 0.6;
+}
+
+.DatosUsuarioA input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: #FFFFFF;
+}
+
+::-moz-input-placeholder{
+   color: #FFFFFF;
+}
+/*---------------BUTTON 1------------------*/ 
+
+/*---------------Clase  Registrar Usuario------------------*/      
+   

@@ -14,9 +14,9 @@ echo '<script>
 
 
 $host = 'localhost';
-$username = 'id4739775_carlos';
+$username = 'id5910379_carlos';
 $password = 'Car.2018';
-$db_name = 'id4739775_javeshopping';
+$db_name = 'id5910379_ujjaveshopping';
 
 //Establishes the connection
 $conn = mysqli_init();
@@ -97,25 +97,60 @@ if('TRUE'===$status){
             <p align = "right">Unidades</p>
             <p align = "right">Oferta</p>
             <p align = "right">Descripcion</p>
-            <p align = "right">Foto</p>
+<!--            <p align = "right">Foto</p>-->
             <p align = "right">Fecha</p>
-            <p align = "right">Estado Producto</p>    
+            <p align = "right">Categoria</p>
+            <p align = "right">Lugar</p>    
             </div>    
       </div>
       
       
        <div class="BotonBuscar">
         <div>
-            <form action="../insertarProducto.php" method="POST">   
+            <form action="php/insertarProducto.php" method="POST">   
         
             <p align = "left"><input type="text" placeholder="Nombre de Producto" name="nombreProducto"></p>   
             <p align = "left"><input type="text" placeholder="Precio de Producto" name="precio"></p>   
-            <p align = "left"><input type="text" placeholder="Unidades del Producto" name="unidades"></p>   
-            <p align = "left"><input type="text" placeholder="Oferta de Producto" name="oferta"></p>   
-            <p align = "left"><input type="text" placeholder="Descripcion de Producto" name="descripcion"></p>   
-            <p align = "left"><input type="text" placeholder="XXxxxxxxXXXXXxxxxxxXXXX" name="foto"></p> 
+            <p align = "left"><input type="text" placeholder="Unidades del Producto" name="unidades"></p>    
+            <p align = "left">
+                <select name="oferta">
+                    <option selected disabled>Selecciona Oferta</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                    <option value="50">50%</option>
+                    <option value="30">30%</option>
+                    <option value="20">20%</option>
+                    <option value="10">10%</option>
+                </select>
+             </p>    
+            <p align = "left"><input type="text" placeholder="Descripcion de Producto" name="descripcion"></p>    
+<!--            <p align = "left"><input type="text" placeholder="XXxxxxxxXXXXXxxxxxxXXXX" name="foto"></p> -->
             <p align = "left"><input name="fecha" type="text" id="fecha" value="<?php echo date("m/d/Y"); ?>" size="10" /></p>   
-            <p align = "left"><input type="text" placeholder="Estado de Producto" name="estado"></p>
+            <p align = "left">
+                <select name="categoria">
+                    <option selected disabled>Selecciona Categoria</option>
+                    <option value="Accesorios">Accesorios</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Trabajos">Trabajos</option>
+                    <option value="Vivienda">Vivienda</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Muebles">Muebles</option>
+                    <option value="Perfumeria">Perfumeria</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="Farmaceutica">Farmaceutica</option>
+                    <option value="Viajes">Viajes</option>
+                </select>
+             </p>
+                <p align = "left">
+                <select name="lugar">
+                    <option selected disabled>Selecciona Lugar</option>
+                    <option value="EntradaBiblo">Entrada Biblo</option>
+                    <option value="Giraldo">Giraldo</option>
+                    <option value="Baron">Baron</option>
+                    <option value="Basicas">Basicas</option>
+                 
+                </select>
+             </p>     
             <div class="BotonFlotante">
                 <input type="submit" value="Publicar"/>    
                 </div>     

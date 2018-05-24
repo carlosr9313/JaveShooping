@@ -12,9 +12,9 @@ echo '<script>
      
 }
 $host = 'localhost';
-$username = 'id4739775_carlos';
+$username = 'id5910379_carlos';
 $password = 'Car.2018';
-$db_name = 'id4739775_javeshopping';
+$db_name = 'id5910379_ujjaveshopping';
 
 //Establishes the connection
 $conn = mysqli_init();
@@ -56,7 +56,7 @@ if('TRUE'===$status){
   <meta charset="UTF-8">
 
   <title>Registro</title>
-  <link rel="stylesheet" href="css/pagInicio.css"/> 
+  <link rel="stylesheet" href="css/pagInfo.css"/> 
   <link rel="stylesheet" href="css/cuerpoPagina.css"/> 
 
     <style>
@@ -93,13 +93,13 @@ if('TRUE'===$status){
             <p align = "right">Nombres</p>
             <p align = "right">Apellido 1</p>
             <p align = "right">Apellido 2</p>
-            <p align = "right">Correo</p>
+            <p align = "right">Correo Javeriana</p>
             <p align = "right">Fecha Nacimiento</p>
             <p align = "right">Estado de Cuenta</p>    
             </div>    
       </div>
       
-       <div class="TitulosUsuarioRescatado" style = "float: right">
+       <div class="TitulosDatosUsuarioRescatado2" style = "float: right">
             <div> 
             <p align = "left"><?php echo $Nombre1;?></p>
             <p align = "left"><?php echo $Apellido11;?></p> 

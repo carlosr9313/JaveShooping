@@ -1,9 +1,9 @@
 <html>
 <?php
 $host = 'localhost';
-$username = 'id4739775_carlos';
+$username = 'id5910379_carlos';
 $password = 'Car.2018';
-$db_name = 'id4739775_javeshopping';
+$db_name = 'id5910379_ujjaveshopping';
 //Establishes the connection
 $conn = mysqli_init();
 mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
@@ -26,7 +26,7 @@ function acortarurl($url){
     //require "class.smtp.php";
     $nombreusuario = $_GET['Email']; 
     //echo "NombredeUsuario = '$nombreusuario'";
-    $email = 'javeshooping@gmail.com'; 
+    $email = 'gjaveshopping@gmail.com'; 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     require 'PHPMailer/src/Exception.php';
@@ -40,8 +40,8 @@ function acortarurl($url){
     $mail->Port = 465; //puerto seguro del servidor SMTP de gmail
     $mail->From = $email; // Correo del usuario
     $mail->FromName = ($email);
-    $mail->AddAddress ($nombreusuario); //Destinatario
-    $mail->Username = "javeshooping@gmail.com"; //Aqui pon tu correo de gmail
+    $mail->AddAddress($nombreusuario); //Destinatario
+    $mail->Username = "gjaveshopping@gmail.com"; //Aqui pon tu correo de gmail
     $mail->Password = "Car.2018"; //aqui pon tu contrasena
     $mail->Subject = "Activacion cuenta JAVESHOPPING"; //Asunto del correo
       
@@ -91,15 +91,16 @@ function acortarurl($url){
                      }
                     }
 
-        $api = new GoogleURL('AIzaSyB_6GvV73ZI_LnezjglChhyI52YRbwl6AY');
+        $api = new GoogleURL('AIzaSyBpRkjhroOyVWBP2Bm_SRTSj49QkmGJbQ4');
         //ver url acortandola
-        $url = "https://javeshopping.000webhostapp.com/php/verificacionRecibida.php?id=$nombreusuario";
+        $url = "ujjaveshopping.000webhostapp.com/php/verificacionRecibida.php?id=$nombreusuario";
         $url_corta =  $api->encode($url);
+        $url_corta2 = $api->encode($url_corta);
         //ver url real
         //$url_larga  = $api->decode('http://goo.gl/mbMv2X');
     
     $mail->Body = 'Hola, te damos la bienvenida a JAVESHOPPING.
-         El registro está casi completo. Por favor clickea el enlace que activará su cuenta.Tenga en cuenta que este email puede llegar como correo spam, si fue su caso, dar permiso para sacarlo de esta region de SPAM. Su usuario sera el correo institucional, para completar el registro haz clic en el siguiente link: ('.$url_corta.') y con esto quedará verificada la cuenta'; //Contenido del correo
+         El registro está casi completo. Por favor clickea el enlace que activará su cuenta.Tenga en cuenta que este email puede llegar como correo spam, si fue su caso, dar permiso para sacarlo de esta region de SPAM. Su usuario sera el correo institucional, para completar el registro haz clic en el siguiente link: ['.$url_corta2.'] y con esto quedará verificada la cuenta'; //Contenido del correo
     $mail->WordWrap = 50; //Numero de columnas
     //$mail->MsgHTML(prueba); //se indica que el cuerpo del correo tendrà formato HTML
     //$mail->AddAttachment($destino); //accedemos  al archivo  que se subió al servidor  y lo adjuntamos
@@ -107,7 +108,7 @@ function acortarurl($url){
         $respuesta= "Bienvenido $nombreusuario el registro está casi completo. Por favor chequea tu email $nombreusuario y clickea el enlace $url_corta que activará su cuenta.Tenga en cuenta que este email puede llegar como correo spam, por lo que debe revisar su bandeja de correos no deseados.";
         //echo "SE ENVIO, $respuesta";
         }else {
-        $respuesta= "El mensaje no se pudo enviar a su cuenta =(";
+        $respuesta= "El mensaje no se pudo enviar a su cuenta ";
         $respuesta .=" Error: " .$mail->ErrorInfo;   
         //echo "NO SE PUDO ENVIAR";
         }
@@ -147,7 +148,11 @@ function acortarurl($url){
     
   <div id="main">
         <div class="TitulosRegistroGlobal2">
-            <div><?php echo $respuesta;?></div>
+            <div><?php echo $respuesta;
+                  echo '<script>
+			alert("'.$respuesta.'");
+			location.href="../php/verificacionRecibida.php?id='.$nombreusuario.'";
+		</script>';?></div>
         </div>
     </div>	
     

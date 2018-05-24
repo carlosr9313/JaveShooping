@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$username = 'id4739775_carlos';
+$username = 'id5910379_carlos';
 $password = 'Car.2018';
-$db_name = 'id4739775_javeshopping';
+$db_name = 'id5910379_ujjaveshopping';
 //Establishes the connection
 $conn = mysqli_init();
 mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);

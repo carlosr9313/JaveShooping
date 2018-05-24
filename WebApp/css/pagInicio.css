@@ -19,8 +19,8 @@ div#header{
    
     width: 100%;
     height: 200px;
-    background-color: black;
-    opacity: 0.8;   
+    background-color: whitesmoke;
+    opacity: 0.9;   
 }
 div#Usuario{
     position: absolute;
@@ -28,7 +28,7 @@ div#Usuario{
     left: 20px;
     width: 15%;
     height: 105px;
-    background-color: gray;
+    background-color: whitesmoke;
     opacity: 0.9;   
 }
 
@@ -36,8 +36,8 @@ div#main{
     margin: auto;
     width: 800px;
     height: 500px;
-    background-color: black;
-    opacity: 0.8;  
+    background-color: whitesmoke;
+    opacity: 0.9;  
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -45,8 +45,8 @@ div#main{
 div#footer{
      width: 100%;
     height: 100px;
-    background-color: black;
-    opacity: 0.8; 
+    background-color: whitesmoke;
+    opacity: 0.9; 
 }
 /*----------TITULO REGISTRO GLOBAL-----------*/
 .TitulosRegistroGlobal{
@@ -121,7 +121,7 @@ div#footer{
 .TitulosDatosUsuarioRescatado{
 	width: 15%;
     margin: 20px auto;
-    padding-left: 160px;
+    padding-left: 110px;
     padding-top: 70px;
     width: 200px;
   
@@ -140,15 +140,16 @@ div#footer{
 .TitulosUsuarioRescatado{
 	width: 15%;
     margin: 20px auto;
-    width: 100px;
+    width: 500px;
+    height: 300px;
+    background-color: white;
   
 }
 
 .TitulosUsuarioRescatado div{
 	
-    float:right;
-    padding-right: 130px;
-    padding-top: 70px;
+    float:center;
+    padding-top: 60px;
     color: #3850FF;
 	font-family: 'Indie Flower', cursive;
     font-weight: 200;
@@ -296,6 +297,63 @@ div#footer{
 }
 /*----------BOTON de buscar   REGISTRO GLOBAL-----------*/
 
+
+/*----------BOTON de BotonBuscarTodo  REGISTRO GLOBAL-----------*/
+.BotonBuscarTodo{
+	position: absolute;
+    top:  450px; 
+    left: 10px;
+    width: 20%;
+    height: 100px;
+	padding: 10px;
+	
+}
+/*NOMBRE USUARIO*/
+.BotonBuscarTodo input[type=text]{
+    
+	border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 200px;
+	height: 30px;
+	background: transparent;
+	color: #FFFFFF;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	
+}
+.BotonBuscarTodo div{
+    
+	width: 220px;
+	height: 40px;
+    margin-left: 0px;
+	color: #FFFFFF;
+    margin-left: 70px;
+	font-family: 'Exo', sans-serif;
+	
+}
+/*INFOR NOMBRe*/
+
+.BotonBuscarTodo input[type=submit]{
+	border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+    position: absolute;
+    left: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+	
+}
+/*----------BOTON de BotonBuscarTodo   REGISTRO GLOBAL-----------*/
+
 /*----------BOTON de buscar  REGISTRO GLOBAL-----------*/
 .BotonPostear{
 	position: absolute;
@@ -350,4 +408,239 @@ div#footer{
 }
 /*----------BOTON de buscar   REGISTRO GLOBAL-----------*/
 
+/*----------Publicaciones  REGISTRO GLOBAL-----------*/
+.BotonFlotanteDerecha{
+	
 
+    position: absolute;
+	top: calc(80% - 80px);
+    left: calc(50% - 70px);
+	float: center;
+	height: 100px;
+	width: 200px;
+
+	
+}
+
+/*BOTON DE USUARIO*/
+.BotonFlotanteDerecha input[type=submit]{
+	
+    
+    border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+   
+	
+}
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+
+/*----------BOTON de buscar   REGISTRO GLOBAL-----------*/
+
+/*----------Publicaciones  REGISTRO GLOBAL-----------*/
+.BotonFlotanteIzquierda{
+	
+    position: absolute;
+	top: calc(130% - 80px);
+    left: calc(50% - 70px);
+	float: center;
+	height: 100px;
+	width: 200px;
+	
+}
+
+/*BOTON DE USUARIO*/
+.BotonFlotanteIzquierda input[type=submit]{
+	
+    
+    border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+   
+	
+}
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+
+.idBorrar{
+	position: absolute;
+	top: calc(100% - 80px);
+    left: calc(27% - 70px);
+	float: center;
+	height: 100px;
+	width: 300px;
+	
+}
+
+.idBorrar input[type=text]{
+    border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+.idEditar{
+	position: absolute;
+	top: calc(100% - 80px);
+    left: calc(67% - 70px);
+	float: center;
+	height: 100px;
+	width: 300px;
+	
+}
+
+.idEditar input[type=text]{
+    border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.idComprar{
+	position: absolute;
+	top: calc(105% - 80px);
+    left: calc(48% - 70px);
+	float: center;
+	height: 100px;
+	width: 300px;
+	
+}
+
+.idComprar input[type=text]{
+    border: 1px solid #0B33CC;
+	border-radius: 2px;
+	width: 220px;
+	height: 30px;
+	background: transparent;
+	color: #0B33CC;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+/*----------Publicaciones  REGISTRO GLOBAL-----------*/
+.BotonFlotanteCaneclar{
+	
+    position: absolute;
+	top: calc(10% - 80px);
+    left: calc(50% - 70px);
+	float: center;
+	height: 100px;
+	width: 200px;
+	
+}
+
+/*BOTON DE USUARIO*/
+.BotonFlotanteCaneclar input[type=submit]{
+	
+    
+    border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+   
+	
+}
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+
+/*----------Publicaciones  REGISTRO GLOBAL-----------*/
+
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+
+
+
+/*----------Publicaciones  REGISTRO GLOBAL-----------*/
+.BotonFlotanteDerecha2{
+	
+
+    position: absolute;
+	top: calc(210% - 80px);
+    left: calc(50% - 70px);
+	float: center;
+	height: 100px;
+	width: 200px;
+
+	
+}
+
+/*BOTON DE USUARIO*/
+.BotonFlotanteDerecha2 input[type=submit]{
+	
+    
+    border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+   
+	
+}
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
+
+/*----------BOTON de buscar   REGISTRO GLOBAL-----------*/
+
+/*----------Publicaciones  REGISTRO GLOBAL-----------*/
+.BotonFlotanteIzquierda2{
+	
+    position: absolute;
+	top: calc(210% - 80px);
+    left: calc(50% - 70px);
+	float: center;
+	height: 100px;
+	width: 200px;
+	
+}
+
+/*BOTON DE USUARIO*/
+.BotonFlotanteIzquierda2 input[type=submit]{
+	
+    
+    border: 1px solid #FFC40D;
+    border-radius: 2px;
+    width: 70px;
+	height: 35px;
+	background: #FFC40D;
+	cursor: pointer;
+	color: #061B6E;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+   
+	
+}
+/*----------FIN de Publicaciones  REGISTRO GLOBAL-----------*/
